@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Task as TaskRequest;
 use App\Task;
-use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
@@ -14,13 +14,8 @@ class TaskController extends Controller
         return response()->json($tasks);
     }
 
-    public function store(Request $request)
+    public function store(TaskRequest $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required'
-        ]);
-
         $task = Task::create($request->all());
 
         return response()->json($task, 201);
@@ -31,13 +26,8 @@ class TaskController extends Controller
         return response()->json($task);
     }
 
-    public function update(Request $request, Task $task)
+    public function update(TaskRequest $request, Task $task)
     {
-        $request->validate([
-            'title'       => 'nullable',
-            'description' => 'nullable'
-        ]);
-
         $task->update($request->all());
 
         return response()->json($task, 202);
