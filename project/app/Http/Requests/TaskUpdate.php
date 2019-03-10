@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-class Task extends APIRequest
+class TaskUpdate extends APIRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,8 +22,8 @@ class Task extends APIRequest
     public function rules()
     {
         return [
-            'title' => 'required|max:255',
-            'description' => 'required|max:255'
+            'title' => 'max:255',
+            'description' => 'max:255'
         ];
     }
 }
