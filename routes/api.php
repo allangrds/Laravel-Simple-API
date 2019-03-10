@@ -1,5 +1,5 @@
 <?php
-Route::middleware('throttle:15,1')->group(function () {
+Route::middleware(['throttle:15,1', 'auth:api'])->group(function () {
     Route::prefix('tasks')->group(function () {
         Route::get('/', 'TaskController@index')->name('tasks.index');
         Route::post('/', 'TaskController@store')->name('tasks.store');
