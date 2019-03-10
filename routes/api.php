@@ -13,3 +13,12 @@ Route::prefix('tasks')->group(function () {
     Route::patch('/{task}', 'TaskController@update')->name('tasks.update');
     Route::delete('/{task}', 'TaskController@destroy')->name('tasks.destroy');
 });
+
+Route::prefix('auth')->group(function () {
+    Route::post('login', 'AuthController@login')->name('auth.login');
+
+    Route::middleware(['auth:api'])->group(function () {
+        Route::post('logout', 'AuthController@logout')->name('auth.logout');
+    });
+});
+
