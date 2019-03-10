@@ -1,0 +1,204 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to Laravel Simple API\n\n\nJust a study project to test api creation with laravel",
+            "title": "Home"
+        },
+        {
+            "location": "/#welcome-to-laravel-simple-api",
+            "text": "Just a study project to test api creation with laravel",
+            "title": "Welcome to Laravel Simple API"
+        },
+        {
+            "location": "/auth/login/",
+            "text": "Login - \nauth/login\n\n\n\n\n\n\n\n\nPermission level\n\n\nURL\n\n\nMethod\n\n\nFormat\n\n\nHTTP Status Code\n\n\n\n\n\n\n\n\n\n\nAnonymous\n\n\nauth/login\n\n\nPOST\n\n\njson\n\n\n200\n, \n400\n\n\n\n\n\n\n\n\nHeaders\n\n\n\n\n\n\n\n\nField\n\n\nContent\n\n\n\n\n\n\n\n\n\n\nContent-Type\n\n\napplication/json\n\n\n\n\n\n\n\n\nRequest Content\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nRequired\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\nemail\n\n\nEmail field\n\n\nYes\n\n\nUser's email\n\n\n\n\n\n\npassword\n\n\nString\n\n\nYes\n\n\nUser's password\n\n\n\n\n\n\n\n\nResponse Content\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\ntoken_type\n\n\nString\n\n\nBearer\n\n\n\n\n\n\ntoken\n\n\nString\n\n\nToken\n\n\n\n\n\n\nexpires_at\n\n\nInteger\n\n\nDatetime with exact time for the token expire\n\n\n\n\n\n\n\n\nExample\n\n\nEvent\n: Anonymous \nPOST\n to \n/auth/login/\n\n\nHeader Content\n:\n\n\nContent-Type: application/json\n\n\n\n\nBody Content\n: \n\n\n{\n    \"email\": \"jonhdoeqa@email.com\",\n    \"password\": \"1234ABCD\"\n}\n\n\n\n\n\nHTTP Status Code\n: \n200\n\n\nResponse Content\n:\n\n\n{\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZhMWZlY2E2OWFhMmVmZWQ3MzA4MmViNDk0NDMyOGEzNDEwMDEyYmIxOTQ1MDRlMTc2MDc5MWNjYjJkNWY3ZmFlNjllOGU5MzFhMjMzYmVjIn0.eyJhdWQiOiIxIiwianRpIjoiZmExZmVjYTY5YWEyZWZlZDczMDgyZWI0OTQ0MzI4YTM0MTAwMTJiYjE5NDUwNGUxNzYwNzkxY2NiMmQ1ZjdmYWU2OWU4ZTkzMWEyMzNiZWMiLCJpYXQiOjE1NTIyMjY0MjcsIm5iZiI6MTU1MjIyNjQyNywiZXhwIjoxNTgzODQ4ODI3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kRm4vXYuRHTmuGkMSCa1pqgnN1smKPKA6JR5PGwJxtZ7PCMQCLgf-3FTBUexDetZDITIDbX43Erd-Ul3l_gBiA1mtZWh9oE-_QFNTKPg71yHUeu6RmmMhmPrWgeZmJjubyXXtnICERnn1fEi0DC-20ZWROA7juPneUHOdp4Mofnp5z8UMcF2TjkHLRo_YOgxmGkS8uwtI4vaQqojdpZWAWy7egip5mgDglbxqmKjjuhn1GgkZsks-B166Hy-xX-F5EKnSzlnAD4TdUw7bgV52cnvuE8cIWPeHnpKAZjpfbX5xysRHeGLFWlTZbM25LOJIhpkVqFPYXy3R8S101MF-1r3K6cdHFUHisYYfYZnSo3X_g3qj1dxWfqH_awZopPFWn8IavK8l0p5SmpO31exh0kwLDsk-WCWYWN9ItTjhmXIn70hoD4fWMvpitD0sDjtaCPeaqK2E07FVWwclUiFlr1s0LY5RS0VIS_fCjaJysed9tgpOmjte5yhtKTD5xUAhwMghgVXfLqbYMX3hUfggW3ZtinUT_IKNKq8CkobW2GI5elRNtpOn0EMPLw5U63SxlBwXRn_WkyL4ihChEtu97V24p7LQOLMBpLkHDC1kIhnRDHPKDVajB11pk6MYlOGbHQeH0syg-F8n-Js5TpGX3N3rMxeMznZ00RE_5JtXS0\",\n    \"token_type\": \"Bearer\",\n    \"expires_at\": \"2020-03-10 14:00:27\"\n}",
+            "title": "Login"
+        },
+        {
+            "location": "/auth/login/#login-authlogin",
+            "text": "Permission level  URL  Method  Format  HTTP Status Code      Anonymous  auth/login  POST  json  200 ,  400",
+            "title": "Login - auth/login"
+        },
+        {
+            "location": "/auth/login/#headers",
+            "text": "Field  Content      Content-Type  application/json",
+            "title": "Headers"
+        },
+        {
+            "location": "/auth/login/#request-content",
+            "text": "Field  Type  Required  Detail      email  Email field  Yes  User's email    password  String  Yes  User's password",
+            "title": "Request Content"
+        },
+        {
+            "location": "/auth/login/#response-content",
+            "text": "Field  Type  Detail      token_type  String  Bearer    token  String  Token    expires_at  Integer  Datetime with exact time for the token expire",
+            "title": "Response Content"
+        },
+        {
+            "location": "/auth/login/#example",
+            "text": "Event : Anonymous  POST  to  /auth/login/  Header Content :  Content-Type: application/json  Body Content :   {\n    \"email\": \"jonhdoeqa@email.com\",\n    \"password\": \"1234ABCD\"\n}  HTTP Status Code :  200  Response Content :  {\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImZhMWZlY2E2OWFhMmVmZWQ3MzA4MmViNDk0NDMyOGEzNDEwMDEyYmIxOTQ1MDRlMTc2MDc5MWNjYjJkNWY3ZmFlNjllOGU5MzFhMjMzYmVjIn0.eyJhdWQiOiIxIiwianRpIjoiZmExZmVjYTY5YWEyZWZlZDczMDgyZWI0OTQ0MzI4YTM0MTAwMTJiYjE5NDUwNGUxNzYwNzkxY2NiMmQ1ZjdmYWU2OWU4ZTkzMWEyMzNiZWMiLCJpYXQiOjE1NTIyMjY0MjcsIm5iZiI6MTU1MjIyNjQyNywiZXhwIjoxNTgzODQ4ODI3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.kRm4vXYuRHTmuGkMSCa1pqgnN1smKPKA6JR5PGwJxtZ7PCMQCLgf-3FTBUexDetZDITIDbX43Erd-Ul3l_gBiA1mtZWh9oE-_QFNTKPg71yHUeu6RmmMhmPrWgeZmJjubyXXtnICERnn1fEi0DC-20ZWROA7juPneUHOdp4Mofnp5z8UMcF2TjkHLRo_YOgxmGkS8uwtI4vaQqojdpZWAWy7egip5mgDglbxqmKjjuhn1GgkZsks-B166Hy-xX-F5EKnSzlnAD4TdUw7bgV52cnvuE8cIWPeHnpKAZjpfbX5xysRHeGLFWlTZbM25LOJIhpkVqFPYXy3R8S101MF-1r3K6cdHFUHisYYfYZnSo3X_g3qj1dxWfqH_awZopPFWn8IavK8l0p5SmpO31exh0kwLDsk-WCWYWN9ItTjhmXIn70hoD4fWMvpitD0sDjtaCPeaqK2E07FVWwclUiFlr1s0LY5RS0VIS_fCjaJysed9tgpOmjte5yhtKTD5xUAhwMghgVXfLqbYMX3hUfggW3ZtinUT_IKNKq8CkobW2GI5elRNtpOn0EMPLw5U63SxlBwXRn_WkyL4ihChEtu97V24p7LQOLMBpLkHDC1kIhnRDHPKDVajB11pk6MYlOGbHQeH0syg-F8n-Js5TpGX3N3rMxeMznZ00RE_5JtXS0\",\n    \"token_type\": \"Bearer\",\n    \"expires_at\": \"2020-03-10 14:00:27\"\n}",
+            "title": "Example"
+        },
+        {
+            "location": "/auth/logout/",
+            "text": "Logout - \nauth/logout\n\n\n\n\n\n\n\n\nPermission level\n\n\nURL\n\n\nMethod\n\n\nFormat\n\n\nHTTP Status Code\n\n\n\n\n\n\n\n\n\n\nUser\n\n\nauth/logout\n\n\nPOST\n\n\njson\n\n\n200\n, \n400\n\n\n\n\n\n\n\n\nHeaders\n\n\n\n\n\n\n\n\nField\n\n\nContent\n\n\n\n\n\n\n\n\n\n\nContent-Type\n\n\napplication/json\n\n\n\n\n\n\nAuthorization\n\n\nBearer \n{token}\n\n\n\n\n\n\n\n\nResponse Content\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\nmessage\n\n\nString\n\n\nSuccessfully logged out",
+            "title": "Logout"
+        },
+        {
+            "location": "/auth/logout/#logout-authlogout",
+            "text": "Permission level  URL  Method  Format  HTTP Status Code      User  auth/logout  POST  json  200 ,  400",
+            "title": "Logout - auth/logout"
+        },
+        {
+            "location": "/auth/logout/#headers",
+            "text": "Field  Content      Content-Type  application/json    Authorization  Bearer  {token}",
+            "title": "Headers"
+        },
+        {
+            "location": "/auth/logout/#response-content",
+            "text": "Field  Type  Detail      message  String  Successfully logged out",
+            "title": "Response Content"
+        },
+        {
+            "location": "/tasks/create/",
+            "text": "Create - \n/tasks\n\n\n\n\n\n\n\n\nPermission level\n\n\nURL\n\n\nMethod\n\n\nFormat\n\n\nHTTP Status Code\n\n\n\n\n\n\n\n\n\n\nUser\n\n\n/tasks\n\n\nPOST\n, \nGET\n\n\njson\n\n\n201\n, \n400\n\n\n\n\n\n\n\n\nHeaders\n\n\n\n\n\n\n\n\nField\n\n\nContent\n\n\n\n\n\n\n\n\n\n\nContent-Type\n\n\napplication/json\n\n\n\n\n\n\nAuthorization\n\n\nBearer \n{token}\n\n\n\n\n\n\n\n\nRequest Content\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nRequired\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\ntitle\n\n\nString\n\n\nYes\n\n\nTask's title\n\n\n\n\n\n\ndescription\n\n\nString\n\n\nYes\n\n\nTask's description\n\n\n\n\n\n\n\n\nResponse Content\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\nid\n\n\nInteger\n\n\nTask's id\n\n\n\n\n\n\ntitle\n\n\nString\n\n\nTask's title\n\n\n\n\n\n\ndescription\n\n\nString\n\n\nTask's description\n\n\n\n\n\n\ncreated_at\n\n\nString\n\n\nTask's created_at\n\n\n\n\n\n\nupdated_at\n\n\nString\n\n\nTask's updated_at\n\n\n\n\n\n\n\n\nExample\n\n\nEvent\n: User \nPOST\n to \n/tasks\n\n\nHeader Content\n:\n\n\nContent-Type: application/json\nAuthorization: Bearer {token}\n\n\n\n\nBody Content\n:\n\n\n{\n    \"title\": \"This is a title\",\n    \"description\": \"This is a description\",\n}\n\n\n\n\nHTTP Status Code\n: \n201\n\n\nResponse Content\n:\n\n\n{\n    \"title\": \"This is a title\",\n    \"description\": \"This is a description\",\n    \"updated_at\": \"2019-03-10 14:21:17\",\n    \"created_at\": \"2019-03-10 14:21:17\",\n    \"id\": 12\n}\n\n\n\n\nValidations\n\n\nHTTP Status Code\n: \n400\n  \n\n\n\n\n\n\n\n\nContent\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\ntitle\n: The title field is required.\n\n\nIt task must have a title\n\n\n\n\n\n\ndescription\n: The description field is required.\n\n\nIt task must have a description\n\n\n\n\n\n\ntitle\n: The title may not be greater than 255 characters.\n\n\nIt titles can't have a string greater than 255 characters\n\n\n\n\n\n\ndescription\n: The description may not be greater than 255 characters.\n\n\nIt descriptions can't have a string greater than 255 characters",
+            "title": "Create"
+        },
+        {
+            "location": "/tasks/create/#create-tasks",
+            "text": "Permission level  URL  Method  Format  HTTP Status Code      User  /tasks  POST ,  GET  json  201 ,  400",
+            "title": "Create - /tasks"
+        },
+        {
+            "location": "/tasks/create/#headers",
+            "text": "Field  Content      Content-Type  application/json    Authorization  Bearer  {token}",
+            "title": "Headers"
+        },
+        {
+            "location": "/tasks/create/#request-content",
+            "text": "Field  Type  Required  Detail      title  String  Yes  Task's title    description  String  Yes  Task's description",
+            "title": "Request Content"
+        },
+        {
+            "location": "/tasks/create/#response-content",
+            "text": "Field  Type  Detail      id  Integer  Task's id    title  String  Task's title    description  String  Task's description    created_at  String  Task's created_at    updated_at  String  Task's updated_at",
+            "title": "Response Content"
+        },
+        {
+            "location": "/tasks/create/#example",
+            "text": "Event : User  POST  to  /tasks  Header Content :  Content-Type: application/json\nAuthorization: Bearer {token}  Body Content :  {\n    \"title\": \"This is a title\",\n    \"description\": \"This is a description\",\n}  HTTP Status Code :  201  Response Content :  {\n    \"title\": \"This is a title\",\n    \"description\": \"This is a description\",\n    \"updated_at\": \"2019-03-10 14:21:17\",\n    \"created_at\": \"2019-03-10 14:21:17\",\n    \"id\": 12\n}",
+            "title": "Example"
+        },
+        {
+            "location": "/tasks/create/#validations",
+            "text": "HTTP Status Code :  400        Content  Detail      title : The title field is required.  It task must have a title    description : The description field is required.  It task must have a description    title : The title may not be greater than 255 characters.  It titles can't have a string greater than 255 characters    description : The description may not be greater than 255 characters.  It descriptions can't have a string greater than 255 characters",
+            "title": "Validations"
+        },
+        {
+            "location": "/tasks/delete/",
+            "text": "Delete - \n/tasks/{id}\n\n\n\n\n\n\n\n\nPermission level\n\n\nURL\n\n\nMethod\n\n\nFormat\n\n\nHTTP Status Code\n\n\n\n\n\n\n\n\n\n\nUser\n\n\n/tasks/{id}\n\n\nDELETE\n\n\njson\n\n\n204\n \n404\n\n\n\n\n\n\n\n\nHeaders\n\n\n\n\n\n\n\n\nField\n\n\nContent\n\n\n\n\n\n\n\n\n\n\nContent-Type\n\n\napplication/json\n\n\n\n\n\n\nAuthorization\n\n\nBearer \n{token}\n\n\n\n\n\n\n\n\nExample\n\n\nEvent\n: User \nDELETE\n to \n/tasks/12\n\n\nHeader Content\n:\n\n\nContent-Type: application/json\nAuthorization: Bearer {token}\n\n\n\n\nBody Content\n: \nNone\n\n\nHTTP Status Code\n: \n204\n\n\nResponse Content\n: \nNone\n\n\nValidations\n\n\nHTTP Status Code\n: \n404\n  \n\n\n\n\n\n\n\n\nContent\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\nid\n: The task does not exists\n\n\nThe task was not found in the database",
+            "title": "Delete"
+        },
+        {
+            "location": "/tasks/delete/#delete-tasksid",
+            "text": "Permission level  URL  Method  Format  HTTP Status Code      User  /tasks/{id}  DELETE  json  204   404",
+            "title": "Delete - /tasks/{id}"
+        },
+        {
+            "location": "/tasks/delete/#headers",
+            "text": "Field  Content      Content-Type  application/json    Authorization  Bearer  {token}",
+            "title": "Headers"
+        },
+        {
+            "location": "/tasks/delete/#example",
+            "text": "Event : User  DELETE  to  /tasks/12  Header Content :  Content-Type: application/json\nAuthorization: Bearer {token}  Body Content :  None  HTTP Status Code :  204  Response Content :  None",
+            "title": "Example"
+        },
+        {
+            "location": "/tasks/delete/#validations",
+            "text": "HTTP Status Code :  404        Content  Detail      id : The task does not exists  The task was not found in the database",
+            "title": "Validations"
+        },
+        {
+            "location": "/tasks/get_all/",
+            "text": "Get All - \n/tasks\n\n\n\n\n\n\n\n\nPermission level\n\n\nURL\n\n\nMethod\n\n\nFormat\n\n\nHTTP Status Code\n\n\n\n\n\n\n\n\n\n\nUser\n\n\n/tasks\n\n\nGET\n\n\njson\n\n\n200\n\n\n\n\n\n\n\n\nHeaders\n\n\n\n\n\n\n\n\nField\n\n\nContent\n\n\n\n\n\n\n\n\n\n\nContent-Type\n\n\napplication/json\n\n\n\n\n\n\nAuthorization\n\n\nBearer \n{token}\n\n\n\n\n\n\n\n\nExample\n\n\nEvent\n: User \nGET\n to \n/tasks\n\n\nHeader Content\n: \nNone\n\n\nBody Content\n: \nNone\n\n\nHTTP Status Code\n: \n200\n\n\nResponse Content\n:\n\n\n[\n    {\n        \"id\": 1,\n        \"title\": \"Rerum maxime quas ut et et molestiae.\",\n        \"description\": \"Nam amet ullam nulla facere fugiat omnis ut sint. Odit odio velit quibusdam ea.\",\n        \"created_at\": \"2019-03-10 04:05:05\",\n        \"updated_at\": \"2019-03-10 04:05:05\"\n    }\n]",
+            "title": "Get all"
+        },
+        {
+            "location": "/tasks/get_all/#get-all-tasks",
+            "text": "Permission level  URL  Method  Format  HTTP Status Code      User  /tasks  GET  json  200",
+            "title": "Get All - /tasks"
+        },
+        {
+            "location": "/tasks/get_all/#headers",
+            "text": "Field  Content      Content-Type  application/json    Authorization  Bearer  {token}",
+            "title": "Headers"
+        },
+        {
+            "location": "/tasks/get_all/#example",
+            "text": "Event : User  GET  to  /tasks  Header Content :  None  Body Content :  None  HTTP Status Code :  200  Response Content :  [\n    {\n        \"id\": 1,\n        \"title\": \"Rerum maxime quas ut et et molestiae.\",\n        \"description\": \"Nam amet ullam nulla facere fugiat omnis ut sint. Odit odio velit quibusdam ea.\",\n        \"created_at\": \"2019-03-10 04:05:05\",\n        \"updated_at\": \"2019-03-10 04:05:05\"\n    }\n]",
+            "title": "Example"
+        },
+        {
+            "location": "/tasks/get_one/",
+            "text": "Get All - \n/tasks/{id}\n\n\n\n\n\n\n\n\nPermission level\n\n\nURL\n\n\nMethod\n\n\nFormat\n\n\nHTTP Status Code\n\n\n\n\n\n\n\n\n\n\nUser\n\n\n/tasks/{id}\n\n\nGET\n\n\njson\n\n\n200\n, \n404\n\n\n\n\n\n\n\n\nHeaders\n\n\n\n\n\n\n\n\nField\n\n\nContent\n\n\n\n\n\n\n\n\n\n\nContent-Type\n\n\napplication/json\n\n\n\n\n\n\nAuthorization\n\n\nBearer \n{token}\n\n\n\n\n\n\n\n\nExample\n\n\nEvent\n: User \nGET\n to \n/tasks\n\n\nHeader Content\n: \nNone\n\n\nBody Content\n: \nNone\n\n\nHTTP Status Code\n: \n200\n\n\nResponse Content\n:\n\n\n{\n    \"id\": 1,\n    \"title\": \"Rerum maxime quas ut et et molestiae.\",\n    \"description\": \"Nam amet ullam nulla facere fugiat omnis ut sint. Odit odio velit quibusdam ea.\",\n    \"created_at\": \"2019-03-10 04:05:05\",\n    \"updated_at\": \"2019-03-10 04:05:05\"\n}\n\n\n\n\nValidations\n\n\nHTTP Status Code\n: \n404\n  \n\n\n\n\n\n\n\n\nContent\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\nid\n: The task does not exists\n\n\nThe task was not found in the database",
+            "title": "Get one"
+        },
+        {
+            "location": "/tasks/get_one/#get-all-tasksid",
+            "text": "Permission level  URL  Method  Format  HTTP Status Code      User  /tasks/{id}  GET  json  200 ,  404",
+            "title": "Get All - /tasks/{id}"
+        },
+        {
+            "location": "/tasks/get_one/#headers",
+            "text": "Field  Content      Content-Type  application/json    Authorization  Bearer  {token}",
+            "title": "Headers"
+        },
+        {
+            "location": "/tasks/get_one/#example",
+            "text": "Event : User  GET  to  /tasks  Header Content :  None  Body Content :  None  HTTP Status Code :  200  Response Content :  {\n    \"id\": 1,\n    \"title\": \"Rerum maxime quas ut et et molestiae.\",\n    \"description\": \"Nam amet ullam nulla facere fugiat omnis ut sint. Odit odio velit quibusdam ea.\",\n    \"created_at\": \"2019-03-10 04:05:05\",\n    \"updated_at\": \"2019-03-10 04:05:05\"\n}",
+            "title": "Example"
+        },
+        {
+            "location": "/tasks/get_one/#validations",
+            "text": "HTTP Status Code :  404        Content  Detail      id : The task does not exists  The task was not found in the database",
+            "title": "Validations"
+        },
+        {
+            "location": "/tasks/update/",
+            "text": "Update - \n/tasks/{id}\n\n\n\n\n\n\n\n\nPermission level\n\n\nURL\n\n\nMethod\n\n\nFormat\n\n\nHTTP Status Code\n\n\n\n\n\n\n\n\n\n\nUser\n\n\n/tasks/{id}\n\n\nPATCH\n\n\njson\n\n\n202\n, \n400\n\n\n\n\n\n\n\n\nHeaders\n\n\n\n\n\n\n\n\nField\n\n\nContent\n\n\n\n\n\n\n\n\n\n\nContent-Type\n\n\napplication/json\n\n\n\n\n\n\nAuthorization\n\n\nBearer \n{token}\n\n\n\n\n\n\n\n\nRequest Content\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nRequired\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\ntitle\n\n\nString\n\n\nNo\n\n\nTask's title\n\n\n\n\n\n\ndescription\n\n\nString\n\n\nNo\n\n\nTask's description\n\n\n\n\n\n\n\n\nResponse Content\n\n\n\n\n\n\n\n\nField\n\n\nType\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\nid\n\n\nInteger\n\n\nTask's id\n\n\n\n\n\n\ntitle\n\n\nString\n\n\nTask's title\n\n\n\n\n\n\ndescription\n\n\nString\n\n\nTask's description\n\n\n\n\n\n\ncreated_at\n\n\nString\n\n\nTask's created_at\n\n\n\n\n\n\nupdated_at\n\n\nString\n\n\nTask's updated_at\n\n\n\n\n\n\n\n\nExample\n\n\nEvent\n: User \nPATCH\n to \n/tasks/12\n\n\nHeader Content\n:\n\n\nContent-Type: application/json\nAuthorization: Bearer {token}\n\n\n\n\nBody Content\n:\n\n\n{\n    \"title\": \"This is a title\",\n    \"description\": \"This is a descrip\n}\n\n\n\n\nHTTP Status Code\n: \n202\n\n\nResponse Content\n:\n\n\n{\n    \"title\": \"This is a title\",\n    \"description\": \"This is a description\",\n    \"updated_at\": \"2019-03-10 14:21:17\",\n    \"created_at\": \"2019-03-11 14:21:17\",\n    \"id\": 12\n}\n\n\n\n\nValidations\n\n\nHTTP Status Code\n: \n400\n  \n\n\n\n\n\n\n\n\nContent\n\n\nDetail\n\n\n\n\n\n\n\n\n\n\ntitle\n: The title may not be greater than 255 characters.\n\n\nIt titles can't have a string greater than 255 characters\n\n\n\n\n\n\ndescription\n: The description may not be greater than 255 characters.\n\n\nIt descriptions can't have a string greater than 255 characters",
+            "title": "Update"
+        },
+        {
+            "location": "/tasks/update/#update-tasksid",
+            "text": "Permission level  URL  Method  Format  HTTP Status Code      User  /tasks/{id}  PATCH  json  202 ,  400",
+            "title": "Update - /tasks/{id}"
+        },
+        {
+            "location": "/tasks/update/#headers",
+            "text": "Field  Content      Content-Type  application/json    Authorization  Bearer  {token}",
+            "title": "Headers"
+        },
+        {
+            "location": "/tasks/update/#request-content",
+            "text": "Field  Type  Required  Detail      title  String  No  Task's title    description  String  No  Task's description",
+            "title": "Request Content"
+        },
+        {
+            "location": "/tasks/update/#response-content",
+            "text": "Field  Type  Detail      id  Integer  Task's id    title  String  Task's title    description  String  Task's description    created_at  String  Task's created_at    updated_at  String  Task's updated_at",
+            "title": "Response Content"
+        },
+        {
+            "location": "/tasks/update/#example",
+            "text": "Event : User  PATCH  to  /tasks/12  Header Content :  Content-Type: application/json\nAuthorization: Bearer {token}  Body Content :  {\n    \"title\": \"This is a title\",\n    \"description\": \"This is a descrip\n}  HTTP Status Code :  202  Response Content :  {\n    \"title\": \"This is a title\",\n    \"description\": \"This is a description\",\n    \"updated_at\": \"2019-03-10 14:21:17\",\n    \"created_at\": \"2019-03-11 14:21:17\",\n    \"id\": 12\n}",
+            "title": "Example"
+        },
+        {
+            "location": "/tasks/update/#validations",
+            "text": "HTTP Status Code :  400        Content  Detail      title : The title may not be greater than 255 characters.  It titles can't have a string greater than 255 characters    description : The description may not be greater than 255 characters.  It descriptions can't have a string greater than 255 characters",
+            "title": "Validations"
+        }
+    ]
+}

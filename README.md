@@ -43,6 +43,9 @@ Execute the tests:
 ./vendor/bin/phpunit
 ```
 
+## API Documentation
+[https://allangrds.github.io/Laravel-Simple-API/](https://allangrds.github.io/Laravel-Simple-API/)
+
 ## Built With
 
 * [Laravel 5.8](https://laravel.com/)
@@ -51,6 +54,7 @@ Execute the tests:
 * [Docker Compose](https://www.docker.com/)
 * [Mysql 5.7](https://dev.mysql.com/downloads/mysql/5.7.html)
 * [PHP 7.2](https://secure.php.net/releases/7_2_0.php)
+* [MKDocs](https://www.mkdocs.org/)
 
 ## License
 
