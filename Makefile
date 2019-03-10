@@ -1,4 +1,4 @@
-up: down-containers kill-containers up-containers composer clear-cache copy-files migrations-seeds node node_modules generate-key create-final-assets
+up: down-containers kill-containers up-containers composer clear-cache copy-files migrations-seeds node node_modules generate-key create-final-assets generate-passport-key
 
 down-containers:
 	@docker-compose down
@@ -30,6 +30,9 @@ copy-files:
 
 generate-key:
 	@docker exec -it sandbox-app php artisan key:generate
+
+generate-passport-key:
+	@docker exec -it sandbox-app php artisan passport:install
 
 migrations-seeds:
 	@docker exec -it sandbox-app php artisan migrate:refresh --seed
