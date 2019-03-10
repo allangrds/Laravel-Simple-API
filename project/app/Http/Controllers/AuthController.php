@@ -2,20 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\Auth as AuthRequest;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    public function login(Request $request)
+    public function login(AuthRequest $request)
     {
-        $request->validate([
-            'email' => 'required|string|email',
-            'password' => 'required|string',
-            'remember_me' => 'boolean'
-        ]);
-
         $credentials = request(['email', 'password']);
 
         if (!Auth::attempt($credentials)) {
