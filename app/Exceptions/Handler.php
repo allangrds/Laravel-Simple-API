@@ -52,12 +52,24 @@ class Handler extends ExceptionHandler
             throw $exception;
         }
 
-        if ($request->ajax() || $request->wantsJson()) {
+        if ($exception) {
+            $statusCode = $exception->getStatusCode();
+            $message = $exception->getMessage();
+
+            switch ($statusCode) {
+                case 404:
+                    $message = 'Not Found';
+                    break;
+                case 500:
+                    $message = 'Interval server error';
+                    break;
+            }
+
             $json = [
                 'success' => false,
                 'error' => [
-                    'code' => $exception->getCode(),
-                    'message' => $exception->getMessage(),
+                    'code' => $statusCode,
+                    'message' => $message,
                 ],
             ];
 
